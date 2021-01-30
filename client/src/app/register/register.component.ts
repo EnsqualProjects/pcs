@@ -41,7 +41,7 @@ export class RegisterComponent implements OnInit {
             state: ['', [Validators.required, Validators.pattern('[a-zA-Z ]*')]],
             country: ['', [Validators.required, Validators.pattern('[a-zA-Z ]*')]],
             zipCode: ['', Validators.required],
-            phone: ['', Validators.required],
+            phone: ['', [Validators.required, Validators.pattern('[0-9 ]*'), Validators.minLength(10), Validators.maxLength(10)]],
             phoneExtension: [''],
             phoneType: ['', Validators.required],
             username: ['', Validators.required],

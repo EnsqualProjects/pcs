@@ -24,17 +24,6 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <mat-form-field class="example-full-width">
-                                        <mat-label>Discipline</mat-label>
-                                        <mat-select formControlName="disciplineCode"  required>
-                                                <mat-option *ngFor="let discipline of disciplineArray" [value]="discipline.code">
-                                                   {{discipline.name}}
-                                                </mat-option>
-                                        </mat-select>                                       
-                                    </mat-form-field>
-                                </div>
-
-                                <div class="col-md-4">
-                                    <mat-form-field class="example-full-width">
                                         <mat-label>Type/Category</mat-label>
                                         <mat-select formControlName="typeOrCategoryCode">
                                                 <mat-option *ngFor="let typeOrCategory of typeOrCategoryArray" [value]="typeOrCategory.code">
@@ -43,6 +32,16 @@
                                         </mat-select>
                                     </mat-form-field>
                                 </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <mat-label>Discipline</mat-label>
+                                        <mat-select formControlName="disciplineCode"  required>
+                                                <mat-option *ngFor="let discipline of disciplineArray" [value]="discipline.code">
+                                                   {{discipline.name}}
+                                                </mat-option>
+                                        </mat-select>                                       
+                                    </mat-form-field>
+                                </div>                                
                                 <div class="col-md-4">
                                     <mat-form-field class="example-full-width">
                                         <input matInput placeholder="Item PO Number" formControlName="itemPoNumber">

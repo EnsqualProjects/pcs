@@ -1,62 +1,44 @@
 :host {
-    display: flex;
-    justify-content: center;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    }
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: rgb(238, 10, 10);
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 280px;
+  
+}
 
-  .mat-form-field {
-     width: 80%;  
-     /* min-width: 40%;  */
-    margin-left: 1rem;
-    margin-right: 1rem;
-    min-width: 20rem;
-  }
+.mat-form-field {
+  width: 100%;
+  min-width: 300px;
+}
 
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
 
-  .mat-card {
-    width : 80%
-  }
+.mat-card-title{
+  font-size: 14px;
+  text-align: center;
+  color: darkblue;
 
-  .mat-card-title,
-  .mat-card-content {
-    display: flex;
-    justify-content: center;
-  }
+}
+.mat-card-content {
+  display: flex;
+  justify-content: center;
+}
 
-  .error {
-    padding: 2px;
-    width: 300px;
-    color: white;
-    background-color: red;
-  }
-
-  .button {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .flexcontainer {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    /* @media screen and (max-width: 100px) {
-      -webkit-flex-direction: column;
-        flex-direction: column;
-      } */
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
- }
-
-
- /**/
+.error {
+  padding: 16px;
+  width: 300px;
+  color: rgb(8, 8, 8);
+  background-color: red;
+}
 
 h1,
 h2,
@@ -117,7 +99,7 @@ svg.material-icons:not(:last-child) {
 }
 
 .card svg.material-icons path {
-  fill: #888;
+  fill: rgb(216, 18, 18);
 }
 
 .card-container {
@@ -126,6 +108,22 @@ svg.material-icons:not(:last-child) {
   justify-content: center;
   margin-top: 16px;
 }
+
+.card {
+  border-radius: 4px;
+  border: 1px solid rgb(245, 4, 4);
+  background-color: #ebe8f3;
+  height: 40px;
+  width: 200px;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+} 
 
 .card-container .card:not(:last-child) {
   margin-right: 0;
@@ -153,7 +151,7 @@ svg.material-icons:not(:last-child) {
   background-color: #1976d2;
   color: white;
   font-weight: 600;
-  border: none;
+  border: 2px;
   width: auto;
   min-width: 30%;
   position: relative;
@@ -254,8 +252,6 @@ footer a {
   align-items: center;
 }
 
-
-
 svg#clouds {
   position: fixed;
   bottom: -160px;
@@ -308,15 +304,11 @@ svg#clouds {
 .form {
   min-width: 150px;
   max-width: 500px;
-  width: 100%;
+  width: auto;
 }
 
 .form-element {
-  padding: 5px 0px 25px 2px;
-  width: 100%;
+  padding: 2px 0px 2px 2px;
+  width: auto;
 }
 
-.button {
-  display: flex;
-  justify-content: flex-end;
-}

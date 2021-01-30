@@ -65,25 +65,27 @@ export class ReceiveMaterialComponent implements OnInit {
 	  
 	  disciplineArray : any = [
 		{name: 'None', code: '0'},
-        {name: 'Construction', code: '1'},
-		{name: 'Software', code: '2'},
-		{name: 'Software', code: '3'},
-		{name: 'Software', code: '4'},
-		{name: 'Software', code: '5'},
-		{name: 'Software', code: '6'},
-		{name: 'Software', code: '7'},
+        {name: 'Civil', code: '1'},
+		{name: 'Architectural', code: '2'},
+		{name: 'Structural', code: '3'},
+		{name: 'Mechanical', code: '4'},
+		{name: 'Piping', code: '5'},
+		{name: 'Electrical', code: '6'},
+		{name: 'Instrumentation', code: '7'},
+		{name: 'Telecom', code: '8'},
+		{name: 'Surface Protection', code: '9'},
+		{name: 'Software', code: '10'},
 	  ];
 	  
 	  typeOrCategoryArray : any = [
 		{name: 'None', code: '0'},
-        {name: 'Simple Electrical Template', code: '1'},
-		{name: 'Custom Electrical Template', code: '2'},
-		{name: 'Simple Electrical Template', code: '3'},
-		{name: 'Custom Electrical Template', code: '4'},
-		{name: 'Simple Electrical Template', code: '5'},
-		{name: 'Custom Electrical Template', code: '6'},
-		{name: 'Simple Electrical Template', code: '7'},
-        {name: 'Custom Electrical Template', code: '8'},
+        {name: 'Project Base Scope', code: '1'},
+		{name: 'Spares', code: '2'},
+		{name: 'Testing Consumable', code: '3'},
+		{name: 'Tools & Equipment', code: '4'},
+		{name: 'Returnable Item', code: '5'},
+		{name: 'Free Issued/Client supplied', code: '6'},
+		
       ];
 
 	private loadAllProjectsForUser() {
