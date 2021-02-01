@@ -1,7 +1,7 @@
 ﻿<mat-card>
-  <mat-card-title>Verify Code Sent in Email</mat-card-title>
+  <mat-card-title>Verify the code recieved in email</mat-card-title>
+  <hr>
   <mat-card-content>
-
     <form [formGroup]="authCodeForm" (ngSubmit)="onVerify()">
       <div class='flexcontainer'>
         <mat-form-field>
@@ -10,22 +10,19 @@
             Code is required.
           </mat-error> 
         </mat-form-field>
-
       </div>
-
       <div class="button">
         <button [disabled]="loading" type="submit" mat-raised-button color='primary'>Verify</button>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <hr>
         <div class="button">
-          <button mat-raised-button color='primary' tooltip="Resend code" onClick="onResend()">Resend</button>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-          <a [routerLink]="['/login']" class="btn btn-link">Cancel</a>
+        <button mat-raised-button color='primary' tooltip="Resend code" onClick="onResend()">Resend code</button>
+          &nbsp;&nbsp;  
         </div>
-        </div>
-
+        <div class="cancel">    
+        <a [routerLink]="['/login']" class="btn btn-link">Cancel</a>
+       </div> 
+      </div>
     </form>
   </mat-card-content>
-
 </mat-card>
