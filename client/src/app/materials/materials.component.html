@@ -20,14 +20,19 @@
                 </mat-select>
               </mat-form-field>
             </div>
+            <div class="col-md-4" fxLayoutAlign="center">
+              <mat-form-field fxFlex="40%">
+                <input matInput type="text" (keyup)="doFilter($event.target.value)" placeholder="Filter">
+              </mat-form-field>
+            </div>
 
             <div class="card-body">
 
-              <div fxLayout fxLayoutAlign="center center">
+             <!-- <div fxLayoutAlign="center">
                 <mat-form-field fxFlex="40%">
                   <input matInput type="text" (keyup)="doFilter($event.target.value)" placeholder="Filter">
                 </mat-form-field>
-              </div>
+              </div> -->
 
               <div class="table-responsive">
 

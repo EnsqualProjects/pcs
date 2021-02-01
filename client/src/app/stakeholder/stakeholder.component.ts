@@ -47,7 +47,7 @@ export class StakeHolderComponent implements OnInit {
 		});
 		this.myFormValueChanges$ = this.stakeHolderFormGroup.controls['subContractors'].valueChanges;
 
-		// this.populateProjectArray();
+		this.populateProjectArray();
 
 	}
 
@@ -57,17 +57,17 @@ export class StakeHolderComponent implements OnInit {
 		});
 	  }
 
-	// private populateProjectArray() {
+	private populateProjectArray() {
 	// 	//get Current user
-	// 	let currentUsers = JSON.parse(localStorage.getItem('currentUser'));
+	 	let currentUsers = JSON.parse(localStorage.getItem('currentUser'));
 
 	// 	//call service to get project list
-	// 	this.projectService.getAllProjectForUser(currentUsers).subscribe(data => this.setProjectArrayForUser(data));
-	// 	}
+		this.projectService.getAllProjectForUser(currentUsers).subscribe(data => this.setProjectArrayForUser(data));
+	 	}
 
-	// private setProjectArrayForUser(allUserProjects) {
-	// 	this.projectArray = allUserProjects;
-	// }
+	 private setProjectArrayForUser(allUserProjects) {
+		//this.projectArray = allUserProjects;
+	 }
 	
 
   private getSubContractor() {
@@ -94,7 +94,7 @@ export class StakeHolderComponent implements OnInit {
       control.removeAt(control.length - 1);
     }
     control.clearValidators();
-//    control.push(this.getNewSubContractor());
+    // control.push(this.getNewSubContractor());
   }
 
 	// convenience getter for easy access to form fields
@@ -105,14 +105,14 @@ export class StakeHolderComponent implements OnInit {
 		this.loading = true;
 
 		let currentProject = JSON.parse(localStorage.getItem('currentProject'));
-		//this.stakeHolder.selectedProject[0].projectId = currentProject.id;
+		this.stakeHolder.selectedProject[0].projectId = currentProject.id;
 
 		this.stakeHolderService.saveOrUpdateStakeHolder(this.stakeHolder)
 			.pipe(first())
 			.subscribe(
 				data => {
 					this.alertService.success('Stake Holder update successfull', true);
-					this.router.navigate(['']);
+					this.router.navigate(['stakeholders']);
 				},
 				error => {
 					this.alertService.error(error);

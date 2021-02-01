@@ -12,7 +12,7 @@
                 <div class="col-md-6">
                 <mat-form-field>
                   <mat-label>Select Project/s</mat-label>
-                  <mat-select formControlName="selectedProject"  multiple required>
+                  <mat-select formControlName="selectedProject"  required>
                     <mat-option>None</mat-option>
                       <mat-option *ngFor="let project of userProjects" [value]="project">
                         {{project.projectTitle}} - {{project.workOrderNumber}}
@@ -27,7 +27,6 @@
                     <input matInput placeholder="Client or Company Name" formControlName="stakeHolderName" required>
                   </mat-form-field>
                 </div>
-
                 <div class="col-md-3">
                   <mat-form-field class="example-full-width">
                     <input matInput placeholder="Client Or Company Short Name" formControlName="stakeHolderShortName">
@@ -40,7 +39,7 @@
                 </div>
               </div>
 
-              <div style="border-style: groove;padding-left: 0.3rem; padding-bottom: 0.3rem;">
+              <div style="border-style: groove;padding-left: 0.1rem; padding-bottom: 0.1rem;">
                 <div>
                   <mat-label >Add Contractor/s </mat-label>
                 </div>

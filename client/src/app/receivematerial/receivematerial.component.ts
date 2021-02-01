@@ -136,7 +136,7 @@ export class ReceiveMaterialComponent implements OnInit {
 		.subscribe(
 			data =>{
 				this.alertService.success('Material Successfully received', true);
-				this.router.navigate(['dashboard']);
+				this.router.navigate(['materialmanagement']);
         	},
         	error => {
           		this.alertService.error(error);
