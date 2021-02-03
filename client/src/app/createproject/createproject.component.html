@@ -15,9 +15,10 @@
                       </mat-radio-group>
                       </div>
                     </div>
+
                     <div class="card-body">
                       <div class="row" *ngIf = "createUpdateProjectOption === 'update'">
-                        <div class="col-md-8">
+                        <div class="col-md-12">
                           <mat-form-field>
                             <mat-label>Select Project</mat-label>
                             <mat-select [(ngModel)]= "selectedUserProject" required (selectionChange)="populateSelectedProject()">
@@ -31,7 +32,7 @@
                     </div>
                         <form [formGroup]="projectForm" (ngSubmit)="onProjectSubmit()">
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-12">
                                   <mat-form-field class="example-full-width" >
                                       <input matInput placeholder="Project Title" formControlName="projectTitle" required>
                                     </mat-form-field>

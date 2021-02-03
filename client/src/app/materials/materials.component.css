@@ -3,6 +3,7 @@ table {
   overflow-x: auto;
   overflow-y: hidden;
   min-width: 500px;
+  text-align: left;
 }
 
 th.mat-header-cell {

@@ -22,7 +22,7 @@
             </div>
             <div class="col-md-4" fxLayoutAlign="center">
               <mat-form-field fxFlex="40%">
-                <input matInput type="text" (keyup)="doFilter($event.target.value)" placeholder="Filter">
+                <input matInput type="text" (keyup)="doFilter($event.target.value)" placeholder="Filter table">
               </mat-form-field>
             </div>
 
@@ -30,7 +30,7 @@
 
              <!-- <div fxLayoutAlign="center">
                 <mat-form-field fxFlex="40%">
-                  <input matInput type="text" (keyup)="doFilter($event.target.value)" placeholder="Filter">
+                  <input matInput type="text" (keyup)="doFilter($event.target.value)" placeholder="Filter table">
                 </mat-form-field>
               </div> -->
 
@@ -70,12 +70,12 @@
                     <th mat-header-cell *matHeaderCellDef mat-sort-header>Descripition</th>
                     <td mat-cell *matCellDef="let element">{{element.description}}</td>
                   </ng-container>
-
+                 
                   <ng-container matColumnDef="Make">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header>Make</th>
                     <td mat-cell *matCellDef="let element">{{element.make}}</td>
                   </ng-container>
-
+                 
                   <ng-container matColumnDef="Model">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header>Model</th>
                     <td mat-cell *matCellDef="let element">{{element.model}}</td>
@@ -90,7 +90,7 @@
                     <th mat-header-cell *matHeaderCellDef mat-sort-header>Spare Quantity</th>
                     <td mat-cell *matCellDef="let element">{{element.spareQuantity}}</td>
                   </ng-container>
-
+                 
                   <ng-container matColumnDef="Total Quantity">
                     <th mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header>Total Quantity</th>
                     <td mat-cell *matCellDef="let element">{{element.totalQuantity}}</td>
@@ -100,12 +100,12 @@
                     <th mat-header-cell *matHeaderCellDef mat-sort-header>UOM</th>
                     <td mat-cell *matCellDef="let element">{{element.uomCode}}</td>
                   </ng-container>
-
+                  
                   <ng-container matColumnDef="Courier Number">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header>Courier Number</th>
                     <td mat-cell *matCellDef="let element">{{element.courierNumber}}</td>
                   </ng-container>
-
+                  
                   <ng-container matColumnDef="Gate Pass Number">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header>Gate Pass Number</th>
                     <td mat-cell *matCellDef="let element">{{element.gatePassNumber}}</td>
@@ -121,7 +121,7 @@
                     <th mat-header-cell *matHeaderCellDef mat-sort-header>Remark</th>
                     <td mat-cell *matCellDef="let element">{{element.remark}}</td>
                   </ng-container>
-
+                   
                   <ng-container matColumnDef="Details">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Details </th>
                     <td mat-cell *matCellDef="let element">

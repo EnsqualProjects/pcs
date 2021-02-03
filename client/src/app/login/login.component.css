@@ -10,6 +10,7 @@
   margin-top:2%;
   min-width: 280px;
   max-width: 350px;
+  border-radius: 15px;
   
 }
 .mat-title {
@@ -17,14 +18,15 @@
   text-align: center;
   }
 
-.button {
-  display: flex;
-  justify-content: center;
-
+.submitbutton {
+  display: block;
+  width: 100%;
+ 
+  
 }
 
-.button:hover {
-  color: red;
+.submitbutton:hover {
+  background-color: rgb(7, 11, 252);
 
 }
 
@@ -34,6 +36,7 @@
   align-items: center;
   text-align: center;
   color: brown;
+  justify-content: center;
 }
 a:visited {
 color: rgb(138, 129, 129);
@@ -43,8 +46,22 @@ text-align: center;
 }
 .logo_main{
   font-size: 48px;
-        
+  animation-name: logoeffect;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+          
 }
-.link{  
-color:darkblue;
+
+@keyframes logoeffect {
+  0%{color: rgb(4, 6, 97) }
+  25%{color: rgb(8, 1, 100)}
+  50%{color: rgb(12, 25, 207)}
+  75%{color: rgb(106, 105, 165)}
+  100%{color: rgb(22, 6, 92)}
+}
+
+
+.inputtext {
+  background: white;
+
 }

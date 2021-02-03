@@ -9,7 +9,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-width: 280px;
-  
+ }
+.mat-card {
+  border-radius: 15px;
 }
 
 .mat-form-field {
@@ -18,8 +20,9 @@
 }
 
 .button {
-  display: flex;
-  justify-content: flex-end;
+  display: block;
+  justify-content: center;
+  width: 100%;
 }
 
 .mat-card-title{
@@ -31,6 +34,10 @@
 .mat-card-content {
   display: flex;
   justify-content: center;
+}
+.btn-btn-link {
+ display: flex;
+ justify-content: center;
 }
 
 .error {
@@ -110,7 +117,7 @@ svg.material-icons:not(:last-child) {
 }
 
 .card {
-  border-radius: 4px;
+  border-radius: 15px;
   border: 1px solid rgb(245, 4, 4);
   background-color: #ebe8f3;
   height: 40px;

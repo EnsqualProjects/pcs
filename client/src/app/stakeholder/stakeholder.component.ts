@@ -105,7 +105,7 @@ export class StakeHolderComponent implements OnInit {
 		this.loading = true;
 
 		let currentProject = JSON.parse(localStorage.getItem('currentProject'));
-		this.stakeHolder.selectedProject[0].projectId = currentProject.id;
+		// this.stakeHolder.selectedProject[0].projectId = currentProject.id;
 
 		this.stakeHolderService.saveOrUpdateStakeHolder(this.stakeHolder)
 			.pipe(first())

@@ -4,7 +4,7 @@ export class Material
 	id : string;
 	projectId: string;
 	userId: string;
-	
+	disciplineName: string;
 	disciplineCode: string;
 	typeOrCategoryCode: string;
 	itemPoNumber: string;
