@@ -24,6 +24,10 @@
   justify-content: center;
   width: 100%;
 }
+.button:hover {
+  background-color: rgb(7, 11, 252);
+  border-radius: 5px;
+}
 
 .mat-card-title{
   font-size: 14px;
@@ -38,6 +42,9 @@
 .btn-btn-link {
  display: flex;
  justify-content: center;
+}
+.btn-btn-link:hover {
+  color: red;
 }
 
 .error {

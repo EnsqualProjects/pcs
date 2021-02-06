@@ -16,6 +16,7 @@
 .mat-title {
   color: rgb(7, 22, 105);
   text-align: center;
+  
   }
 
 .submitbutton {
@@ -45,7 +46,8 @@ text-align: center;
 
 }
 .logo_main{
-  font-size: 48px;
+  font-size: 24px;
+ 
   animation-name: logoeffect;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -53,11 +55,11 @@ text-align: center;
 }
 
 @keyframes logoeffect {
-  0%{color: rgb(4, 6, 97) }
-  25%{color: rgb(8, 1, 100)}
-  50%{color: rgb(12, 25, 207)}
-  75%{color: rgb(106, 105, 165)}
-  100%{color: rgb(22, 6, 92)}
+  0%{color: rgb(6, 10, 252) }
+  25%{color: rgb(21, 255, 0)}
+  50%{color: rgb(167, 168, 173)}
+  75%{color: rgb(2, 202, 252)}
+  100%{color: rgb(255, 5, 5)}
 }
 
 
@@ -65,3 +67,4 @@ text-align: center;
   background: white;
 
 }
+

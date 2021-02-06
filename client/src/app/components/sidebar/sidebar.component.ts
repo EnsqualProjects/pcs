@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+
 
 declare const $: any;
 declare interface RouteInfo {
@@ -16,7 +17,7 @@ export const ROUTES: RouteInfo[] = [
   { path: '/materialmanagement', title: 'Material Management',  icon: 'content_paste', class: '' },
   { path: '/cablemanagement', title: 'Cable Management',  icon: 'content_paste', class: '' },
   { path: '/manageManpower', title: 'Manpower Management',  icon: 'content_paste', class: '' },
-//{ path: '/projects', title: 'Project List',  icon:'content_paste', class: '' },
+  { path: '/projects', title: 'Project List',  icon:'content_paste', class: '' },
   { path: '/user-profile', title: 'User Profile',  icon:'person', class: '' },
   { path: '/notifications', title: 'Notifications',  icon:'notifications', class: '' },
 ];
@@ -45,7 +46,7 @@ export class SidebarComponent implements OnInit {
     this.tempMenuItems = TEMP_ROUTES.filter(tempMenuItem => tempMenuItem);
   }
   isMobileMenu() {
-      if ($(window).width() > 991) {
+      if ($(window).width() > 1920) {
           return false;
       }
       return true;

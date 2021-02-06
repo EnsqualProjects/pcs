@@ -10,9 +10,14 @@
                       <div class="col-md-12">
                       <mat-radio-group  [(ngModel)]="createUpdateProjectOption" (change)="onCreateUpdateRadioSelection()">
                         <mat-radio-button value="create">Create New Project</mat-radio-button>
-                        &nbsp;
-                        <mat-radio-button  value="update">Update Project</mat-radio-button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <mat-radio-button  value="update">Update an existing Project details</mat-radio-button>
                       </mat-radio-group>
+                      
+                      <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                        <mat-icon>more_vert</mat-icon>
+                      </button>
+                      
                       </div>
                     </div>
 
@@ -48,37 +53,38 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <mat-form-field class="example-full-width">
-                                        <input matInput placeholder="Project Company" formControlName="projectCompany" required>
+                                        <input matInput placeholder="Project Company (Your organisation name)" formControlName="projectCompany" required>
                                     </mat-form-field>
                                 </div>
-                             <div class="col-md-2">
+                             <div class="col-md-4">
                                  <mat-form-field class="example-full-width">
                                      <input matInput placeholder="WorkOrder Number" formControlName="workOrderNumber" required>
                                  </mat-form-field>
                              </div>
-                             <div class="col-md-4">
-                                <mat-form-field class="example-full-width">
-                                    <input matInput placeholder="Site Location" formControlName="siteLocation" required>
+                             <div class="col-md-2">
+                              <mat-form-field>
+                                  <input matInput [matDatepicker]="myStartDatePicker" formControlName="projectStartDate" placeholder="Project Start Date">
+                                  <mat-datepicker-toggle matSuffix [for]="myStartDatePicker"></mat-datepicker-toggle>
+                                  <mat-datepicker #myStartDatePicker></mat-datepicker>
                                 </mat-form-field>
+                               </div>
+                             <div class="col-md-2">
+                              <mat-form-field>
+                              <input matInput [matDatepicker]="myEndDatePicker" formControlName="projectEndDate" placeholder="Project End Date">
+                              <mat-datepicker-toggle matSuffix [for]="myEndDatePicker"></mat-datepicker-toggle>
+                              <mat-datepicker #myEndDatePicker></mat-datepicker>
+                            </mat-form-field>
+                             </div>
                             </div>
-                         </div>
+                         
                          <div class="row">
-                            <div class="col-md-5">
-                                <mat-form-field>
-                                    <input matInput [matDatepicker]="myStartDatePicker" formControlName="projectStartDate" placeholder="Project Start Date">
-                                    <mat-datepicker-toggle matSuffix [for]="myStartDatePicker"></mat-datepicker-toggle>
-                                    <mat-datepicker #myStartDatePicker></mat-datepicker>
-                                  </mat-form-field>
+                          <div class="col-md-4">
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Site Location" formControlName="siteLocation" required>
+                            </mat-form-field>
                             </div>
-                         <div class="col-md-5">
-                            <mat-form-field>
-                                <input matInput [matDatepicker]="myEndDatePicker" formControlName="projectEndDate" placeholder="Project End Date">
-                                <mat-datepicker-toggle matSuffix [for]="myEndDatePicker"></mat-datepicker-toggle>
-                                <mat-datepicker #myEndDatePicker></mat-datepicker>
-                              </mat-form-field>
-                         </div>
-                     </div>
-                            <div class="row">
+                          </div>
+                         <!--   <div class="row">
                                 <div class="col-md-5">
                                   <mat-form-field class="example-full-width">
                                     <input matInput placeholder="Address Line 1" formControlName="siteAddressLine1">
@@ -112,7 +118,8 @@
                                     <input matInput placeholder="Postal Code" formControlName="sitePostalCode">
                                   </mat-form-field>
                                 </div>
-                            </div>
+                            </div> 
+                          -->
                             <button mat-raised-button (click)="onCancel()" class="btn btn-info pull-right">Cancel</button>
                             <button mat-raised-button type="submit" class="btn btn-info pull-right">Create / Update</button>
                             <div class="clearfix"></div>

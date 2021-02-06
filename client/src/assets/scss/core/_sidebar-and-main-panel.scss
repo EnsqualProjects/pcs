@@ -6,11 +6,11 @@
 
 .sidebar {
     position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
+    top: 50px;
+    bottom: 0px;
+    left: 20px;
     z-index: 2;
-    width: 260px;
+    width: 250px;
     background: $white-color;
     @include shadow-big();
 
@@ -375,7 +375,7 @@
     @include transition (0.33s, cubic-bezier(0.685, 0.0473, 0.346, 1));
 
      .main-content{
-        margin-top: 70px;
+        margin-top: 50px;
         padding: 30px 15px;
         min-height: calc(100vh - 123px);
     }
