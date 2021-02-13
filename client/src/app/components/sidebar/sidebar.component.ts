@@ -20,6 +20,7 @@ export const ROUTES: RouteInfo[] = [
   { path: '/projects', title: 'Project List',  icon:'content_paste', class: '' },
   { path: '/user-profile', title: 'User Profile',  icon:'person', class: '' },
   { path: '/notifications', title: 'Notifications',  icon:'notifications', class: '' },
+  { path: '/cable-dashb', title: 'Cable Dashboard', icon:'dashboard', class:''},
 ];
 
 export const TEMP_ROUTES: RouteInfo[] = [

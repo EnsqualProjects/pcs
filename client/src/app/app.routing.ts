@@ -7,9 +7,9 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register';
 import { VerifyAuthCodeComponent } from './verifyauthcode';
-// import { CreateProjectComponent } from './createproject/createproject.component';
-// import { ScopeDocumentComponent } from './scopedocument/scopedocument.component';
-// import { StakeHolderComponent } from './stakeholder/stakeholder.component';
+//import { CreateProjectComponent } from './createproject/createproject.component';
+//import { ScopeDocumentComponent } from './scopedocument/scopedocument.component';
+//import { StakeHolderComponent } from './stakeholder/stakeholder.component';
 // import { MaterialsComponent } from './materials/materials.component';
 // import { ReceiveMaterialComponent } from './receivematerial/receivematerial.component';
 // import { IssuematerialComponent } from './issuematerial/issuematerial.component';
@@ -52,9 +52,10 @@ const routes: Routes =[
       // { path: 'punchlist-closeout', component: PunchlistcloseoutComponent   },
       // { path: 'add-manpower', component: AddmanpowerComponent },
       // { path: 'manpower', component: ManpowerComponent }
+    
     ]
   },
-
+  
 ];
 
 @NgModule({

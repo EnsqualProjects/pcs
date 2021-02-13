@@ -90,9 +90,9 @@ import { CableService } from './_services/cable.service';
     RegisterComponent,
     VerifyAuthCodeComponent,
     
-    //CreateProjectComponent,
-    // ScopeDocumentComponent,
-    // StakeHolderComponent,
+   // CreateProjectComponent,
+   // ScopeDocumentComponent,
+   // StakeHolderComponent,
     // MaterialsComponent
 
     // ReceiveMaterialComponent,

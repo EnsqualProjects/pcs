@@ -7,12 +7,19 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Material, MaterialIssue, MaterialReturn, MaterialRequest, User, Project } from '../_models';
 import { MaterialService, ProjectService, AlertService } from '../_services';
 import { first } from 'rxjs/operators';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 
-
-@Component(
-	{
+@Component({
 		selector: 'materialmanagement',
-		templateUrl: 'materials.component.html'
+		templateUrl: 'materials.component.html',
+		styleUrls: ['./materials.component.css'],
+		animations: [
+		  trigger('detailExpand', [
+			state('collapsed', style({height: '0px', minHeight: '0', display: 'none'})),
+			state('expanded', style({height: '*'})),
+			transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
+		  ]),
+		],
 	})
 export class MaterialsComponent implements OnInit {
 

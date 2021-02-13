@@ -2,15 +2,16 @@
   align-items: center;
   position: center;
   content: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(241, 241, 241);
   color: rgb(8, 8, 8);
   align-content: center;
   height: 400px; 
   margin: auto;
-  margin-top:2%;
+  margin-top:5%;
   min-width: 280px;
   max-width: 350px;
   border-radius: 15px;
+  border-style: inherit;
   
 }
 .mat-title {
@@ -22,12 +23,13 @@
 .submitbutton {
   display: block;
   width: 100%;
+  color: rgb(255, 255, 255);
  
   
 }
 
 .submitbutton:hover {
-  background-color: rgb(7, 11, 252);
+  background-color: rgb(4, 196, 255);
 
 }
 

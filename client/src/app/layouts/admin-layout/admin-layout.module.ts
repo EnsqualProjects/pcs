@@ -30,6 +30,7 @@ import { StakeHolderComponent } from '../../stakeholder/stakeholder.component';
 import { ReceiveMaterialComponent } from '../../receivematerial/receivematerial.component';
 import { MaterialsComponent } from '../../materials/materials.component';
 import { CableComponent } from '../../cable/cable.component';
+import { CableDashbComponent } from '../../cable-dashb/cable-dashb.component';
 
 import { CablePullDialogComponent } from '../../_dialog/cablepull/cablepulldialog.component';
 import { CableGlandDialogComponent } from '../../_dialog/cablegland/cableglanddialog.component';
@@ -74,6 +75,7 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
     ReceiveMaterialComponent,
     MaterialsComponent,
     CableComponent,
+    CableDashbComponent,
 
     CablePullDialogComponent,
     CableGlandDialogComponent,

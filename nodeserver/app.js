@@ -23,3 +23,7 @@ require("./routes/register.routes.js")(app);
 app.listen(process.env.port, () => {
     console.log("Server running on port 3000");
 });
+
+
+
+

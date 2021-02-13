@@ -8,6 +8,7 @@ import { StakeHolderComponent } from '../../stakeholder/stakeholder.component';
 import { MaterialsComponent } from '../../materials/materials.component';
 import { CableComponent } from '../../cable/cable.component';
 import { ReceiveMaterialComponent } from '../../receivematerial/receivematerial.component';
+import { CableDashbComponent } from '../../cable-dashb/cable-dashb.component';
 
 import { TableListComponent } from '../../table-list/table-list.component';
 import { TypographyComponent } from '../../typography/typography.component';
@@ -24,6 +25,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'receivematerial', component: ReceiveMaterialComponent },
     { path: 'materialmanagement', component: MaterialsComponent },
     { path: 'cablemanagement', component: CableComponent },
+    { path: 'cable-dashb', component: CableDashbComponent },
 
     { path: 'user-profile',   component: UserProfileComponent },
     { path: 'table-list',     component: TableListComponent },
