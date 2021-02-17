@@ -3,7 +3,7 @@
     border-radius: $border-radius-base;
     // padding: 0.625rem 0;
     // margin-bottom: 20px;
-    margin-top: 5px;
+    margin-top: -20px;
     @include navbar-colors($white-color, $navbar-color);
 
     &.fixed-top{
@@ -23,7 +23,7 @@
 
             &:not(.btn-just-icon) .fa{
                 position: relative;
-                top: 2px;
+                top: 0px;
                 margin-top: -4px;
                 margin-right: 4px;
             }
@@ -115,9 +115,10 @@
     .navbar-brand {
         position: relative;
         color: inherit;
-        height: 50px;
-        font-size: $navbar-brand-font-size - 0.125;
-        line-height: 30px;
+        
+        height: 5px;
+        font-size: $navbar-brand-font-size - 0.1;
+        line-height: 5px;
         padding: $padding-general-y 0;
         font-weight: 300;
         margin-left: 1rem;
@@ -156,7 +157,7 @@
     &.navbar-transparent{
         background-color: transparent !important;
         box-shadow: none;
-        padding-top: 25px;
+        padding-top: 0px;
 
     }
 

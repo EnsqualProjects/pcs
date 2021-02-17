@@ -24,8 +24,13 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'stakeholders', component: StakeHolderComponent },
     { path: 'receivematerial', component: ReceiveMaterialComponent },
     { path: 'materialmanagement', component: MaterialsComponent },
-    { path: 'cablemanagement', component: CableComponent },
-    { path: 'cable-dashb', component: CableDashbComponent },
+    { path: 'cablemanagement', component: CableComponent, 
+    children: [ 
+        { path: 'cable-dashb', component: CableDashbComponent },]
+      
+
+    },
+    //{ path: 'cable-dashb', component: CableDashbComponent },
 
     { path: 'user-profile',   component: UserProfileComponent },
     { path: 'table-list',     component: TableListComponent },

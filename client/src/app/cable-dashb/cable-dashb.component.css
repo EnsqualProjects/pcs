@@ -2,13 +2,18 @@ table {
     position: inherit;
     width: 98%;
     margin-top: 90px;
-    margin-left: 15px;
+    margin-left: 20px;
     margin-bottom: 90px;
-    z-index: 4;
+    font-size: 12;
+ 
     
-    
+  
   }
-   
+  .mat-elevation-z8 {
+    font-size: 12px;
+    text-align: center;
+  }
+
   tr.example-detail-row {
     height: 0;
   }
@@ -34,14 +39,15 @@ table {
     min-width: 80px;
     border: 2px solid rgb(245, 10, 10);
     padding: 8px;
-    font-weight: lighter;
+    font-weight: absolute;
     margin: 8px 0;
     height: 104px;
+  
   }
   
   .example-element-symbol {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     line-height: normal;
   }
   

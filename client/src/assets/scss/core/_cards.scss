@@ -3,7 +3,7 @@
 .card {
   border: 0;
   margin-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 50px;
   border-radius: $border-radius-large;
   color: $gray-dark;
   background: $white-color;
@@ -103,7 +103,7 @@
         }
 
         &:not([class*="card-header-"]){
-            // @include shadow-big();
+             //@include shadow-big();
         }
 
         .nav-tabs {
@@ -115,13 +115,13 @@
             padding: 0;
             z-index: 1;
             margin-left: 15px;
-            margin-right: 15px;
-            margin-top: -30px;
+            margin-right: 0px;
+            margin-top: 0px;
             border-radius: $border-radius-large;
 
             img {
-                width: 100%;
-                border-radius: $border-radius-large;
+                width: 20%;
+                //border-radius: $border-radius-large;
                 pointer-events: none;
                 @include shadow-big-image();
             }
@@ -130,6 +130,7 @@
                 bottom: 15px;
                 left: 15px;
                 color: $white-color;
+                text-size-adjust: 2px;
                 font-size: $font-size-h4;
                 text-shadow: 0 2px 5px rgba(33, 33, 33, 0.5);
             }
@@ -175,7 +176,8 @@
     &.bg-info,
     &.card-rotate.bg-info .front,
     &.card-rotate.bg-info .back{
-      background: linear-gradient(60deg, $cyan-400, $cyan-600);
+     /* background: transparent;*/
+     background: linear-gradient(60deg, $blue-400, $blue-600);
     }
     .card-header-success .card-icon,
     .card-header-success .card-text,

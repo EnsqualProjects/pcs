@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import { Button } from 'protractor';
+import { Routes } from '@angular/router';
 
 @Component({
   selector: 'app-cable-dashb',
@@ -60,7 +61,7 @@ export interface PeriodicElement {
   weight: number;
   symbol: string;
   description: string;
-  Actions: object;
+  
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [

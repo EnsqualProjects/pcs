@@ -7,7 +7,8 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register';
 import { VerifyAuthCodeComponent } from './verifyauthcode';
-//import { CreateProjectComponent } from './createproject/createproject.component';
+import { CreateProjectComponent } from './createproject/createproject.component';
+import { CableDashbComponent } from './cable-dashb/cable-dashb.component';
 //import { ScopeDocumentComponent } from './scopedocument/scopedocument.component';
 //import { StakeHolderComponent } from './stakeholder/stakeholder.component';
 // import { MaterialsComponent } from './materials/materials.component';
@@ -35,6 +36,7 @@ const routes: Routes =[
       {path: '', loadChildren: './layouts/admin-layout/admin-layout.module#AdminLayoutModule' },
       
       // { path: 'setupProject', component: CreateProjectComponent},
+       
       // { path: 'scopedocument', component: ScopeDocumentComponent },
       // { path: 'stakeholders', component: StakeHolderComponent },
       // { path: 'material', component: MaterialsComponent },
@@ -52,7 +54,6 @@ const routes: Routes =[
       // { path: 'punchlist-closeout', component: PunchlistcloseoutComponent   },
       // { path: 'add-manpower', component: AddmanpowerComponent },
       // { path: 'manpower', component: ManpowerComponent }
-    
     ]
   },
   

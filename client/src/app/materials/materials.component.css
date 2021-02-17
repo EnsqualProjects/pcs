@@ -4,6 +4,11 @@ table {
   overflow-y: hidden;
   min-width: 500px;
   text-align: left;
+  
+}
+
+.row {
+  margin-left: 0px;
 }
 
 th.mat-header-cell {
@@ -22,9 +27,9 @@ th.mat-sort-header-sorted {
 table {
   width: 100%;
 }
-
+/*
 tr.example-detail-row {
-  height: 0;
+  height: 2;
 }
 
 tr.example-element-row:not(.example-expanded-row):hover {
@@ -66,3 +71,4 @@ tr.example-element-row:not(.example-expanded-row):active {
 .example-element-description-attribution {
   opacity: 0.5;
 }
+*/
